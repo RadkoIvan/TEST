@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CSS Position</title>
+</head>
+<body>
+	<div class="content">
+		<h1>SASS/SCSS</h1>
+		<div class="line"></div>
+		<h2>
+			Вкладення
+		</h2>
+		<p>Всі властивості можуть бути вкладені один в  одного за структурою від старшого до меншого.
+		</p>
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_1_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_1.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<div class="block__text">
+					Lorem ipsum <span>dolor sit</span> amet.
+				</div>
+			</div>
+		</div>
+		<p>Щоб звернутися до тегу лише пешого рівня вкладеності, потрібно використати оперетор <span> > </span>
+		</p>
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_2_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_2.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<p>Paragraph #1</p>
+				<div class="block__text">
+					<p>Paragraph #2</p>
+					Lorem ipsum <span>dolor sit</span> amet.
+				</div>
+			</div>
+		</div>
+		<p>Щоб підставити батьківський елемент до того чи іншого селектору класу потрібно додати оператор <span> & </span>
+		<br><br>
+		<span>
+			Може бути розміщений як перед селектором класу так і після нього.
+		</span>
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_3_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_3.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<div class="link">
+					<a href="http://google.com">Google</a>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<h2>
+			Змінні  
+		</h2>
+		<p>
+			Використовуються щоб задаати те чи інше значення для будь якої властивості елементу, що зустрічається не один раз в документі. <br>
+			Назви можуть бути будь-якими, але обов'язково перед назвою змінної слід потавити знак <Span> $ </Span>
+		</p>
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_3_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_4.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<div class="link">
+					<a href="http://google.com">Google</a>
+				</div>
+			</div>
+		</div>
+			<div class="line"></div>
+		<h2>
+			Імпорт файлів SCSS 
+		</h2>
+		<P>
+		Будь-який файл scss (стилі окремих сторінок, блоків, обнулюючий стиль і т.д.) файл можна імпортувати до основного файлу scss 
+		</P>
+		<br>
+		<p>
+			Імпорт файлу scss: <span>@import "nullstyle.scss";</span>
+
+		</p>
+		<div class="line"></div>
+		<h2>
+			Шаблони
+		</h2>
+		<p>
+			Для елементів, блоків в документі зі стилями які повторюються можна використовувати шаблони.
+		</p>
+		
+		<p>
+			Для створення шаблону на початку його назви слід поставити знак <span>%</span>. Таким чином ми створимо шаблон який не відображатиметься в файлі стилів css. 
+		</p>
+		<p>
+			Також за допомогою функції доавання шаблонів можна створити не існуючий клас з потрібними для цього шаблону стилями,  і додавати його до тих чи інших елементів документу.
+		</p>
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_5_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_5.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<div class="link__3">
+					<a href="http://google.com">Google</a>
+				</div>
+				<div class="link__4">
+					<a href="http://google.com">Google - 2</a>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<h2>
+			Mixins
+		</h2>
+		<p>
+			Використовується для того, щоб створити шоблон для стилів які можуть бути використані в різних елементах сторінки, але значення цих властивостей можуть бути різні. 
+		</p>
+		
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_6_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_6.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block">
+				<div class="link__5">
+					<a href="http://google.com">Google</a>
+				</div>
+				<div class="link__6">
+					<a href="http://google.com">Google - 2</a>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<h2>
+			Математика
+		</h2>
+		<p>
+		 Препроцесор вміє рахувати))))
+		</p>
+		<br>
+		<p>
+			<span>
+				В прикладі ми вираховуємо ширину блока в процентному співвідношенні, знаючи, що його ширина 300px, а ширина контентної частини 960px. 
+			</span>
+		</p>
+		
+		<div class="example">
+			<div class="imagehtml">
+				<img src=".//img/Вкладення_7_HTML.png" alt="">
+			</div>
+			<div class="verticalline">
+			</div>
+			
+			<div class="imagesass">
+			<img src="./img/Вкладення_7.png" alt="">
+			</div>	
+			<div class="verticalline">
+			</div>
+			<div class="block__math">
+				<p>
+					Hello SASS!!!
+				</p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<h2>
+			Коментарі
+		</h2>
+		<p>
+		     В препроцесорі можна використовувати як стандартні коментарі css <span>/* тут якийсь коментар*/</span>, які переписуються з scss файлу в css файл, так ф коментарі препоцесору <span> // тут коментар </span>, який на відміну від попередьного варіанту не записуєтся в головний файл стилів.
+		</p>
+		<br>
+		<span class="red">
+			Коментарі  scss строчні, тобто діють до нового рядка в файлі:
+			
+		</span>
+		<br> <br>
+		
+		<span>
+			// тут коментар 
+			<br>
+			// тут інший коментар 
+		</span>
+		
+	
+	
+	</div>
+	
+					
+
+
+	
+	
+</body>
+</html>
